@@ -1,0 +1,27 @@
+{
+  "name": "midiabstract",
+  "version": "1.0.0",
+  "description": "An abstraction layer for midi controllers",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "midi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfbehrens99/midiabstract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mfbehrens99/midiabstract/issues"
+  },
+  "homepage": "https://github.com/mfbehrens99/midiabstract#readme",
+  "author": "Michael Behrens",
+  "license": "ISC",
+  "dependencies": {
+    "closest-match": "^1.3.3",
+    "easymidi": "^3.1.0"
+  }
+}
