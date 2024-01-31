@@ -1,4 +1,4 @@
-import MidiController from "../midiabstract/midi.js";
+import { MidiController } from "../midiabstract/midi.js";
 import { MidiButtonEntity, MidiBinaryLamp, MidiFaderEntity, MidiFaderMotorEntity, MidiEncoderEntity, MidiDimmerLampEntity } from "../midiabstract/midi_entities.js";
 
 // var button_names = new BiMap({
@@ -18,7 +18,7 @@ import { MidiButtonEntity, MidiBinaryLamp, MidiFaderEntity, MidiFaderMotorEntity
 //     "buttonTouchMain": 112,
 // })
 
-export default class XTouchCompactMidiController extends MidiController {
+export class XTouchCompactMidiController extends MidiController {
     constructor() {
         super({ name: "X-TOUCH COMPACT" })
 

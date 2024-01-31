@@ -1,6 +1,6 @@
 {
   "name": "midiabstract",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An abstraction layer for midi controllers",
   "type": "module",
   "main": "index.js",

@@ -1,5 +1,4 @@
 import EventEmitter from "node:events";
-import MidiController from "./midi.js"
 
 // Base classes
 export class MidiEntity {
@@ -171,13 +170,13 @@ export class MidiColorLampEntity extends MidiOutputEntity {
         hue = hue % 1;
         saturation = Math.max(0, Math.min(1, saturation));
         value = Math.max(0, Math.min(1, value));
-    
+
         let chroma = value * saturation;
         let huePrime = hue * 6;
         let x = chroma * (1 - Math.abs(huePrime % 2 - 1));
-    
+
         let red, green, blue;
-    
+
         if (0 <= huePrime && huePrime < 1) {
             [red, green, blue] = [chroma, x, 0];
         } else if (1 <= huePrime && huePrime < 2) {
@@ -193,9 +192,9 @@ export class MidiColorLampEntity extends MidiOutputEntity {
         } else {
             [red, green, blue] = [0, 0, 0];
         }
-    
+
         let m = value - chroma;
-    
+
         // Adjust values to be in the range [0, 1]
         red = (red + m);
         green = (green + m);
